@@ -74,17 +74,88 @@
             grid-template-columns: 1fr 1fr 1fr 1fr;
             column-gap: 2%;
         }
+        @media screen and (min-width: 0px) and (max-width: 440px) {
+            .attendance-card-body{
+                display: grid;
+                grid-template-columns: 1fr;
+                column-gap: 2%;
+            }
+            .profile{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .institute-img{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 440px) and (max-width: 600px) {
+            .attendance-card-body{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 2%;
+            }
+            .profile{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .institute-img{
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 600px) and (max-width: 780px) {
+            .attendance-card-body{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                column-gap: 2%;
+            }
+        }
     </style>
 </head>
 <body>
     <div>
-        <div class="header">Header</div>
+        <div class="header">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="https://pict.edu/">
+                        P.I.C.T.
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Ranks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Faculty</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Results
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="">First Year</a></li>
+                                <li><a class="dropdown-item" href="">Second Year</a></li>
+                                <li><a class="dropdown-item" href="">Third Year</a></li>
+                                <li><a class="dropdown-item" href="">Final Year</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </nav>
+        </div>
         <div class="middle">
             <div class="sidebar">
                 <!-- <div class="sidebar-close-btn"> 
                     X
                 </div> -->
-                <p class="fs-4">Welcome Siddhesh</p>
+                <p class="fs-4">Welcome Siddhesh!</p>
     
                 <ul class="nav flex-column">
                     <li class="nav-item">
@@ -211,29 +282,29 @@
                         <div class="card border-success mb-3" style="max-width: 18rem;">
                             <div class="card-header">WAD-LAB</div>
                             <div class="card-body text-success">
-                                <h5 class="card-title">89%</h5>
-                                <p class="card-text">Missed Lecture 5, 9</p>
+                                <h5 class="card-title">92%</h5>
+                                <p class="card-text">Missed Laborataries 9</p>
                             </div>
                         </div>
-                        <div class="card border-danger mb-3" style="max-width: 18rem;">
+                        <div class="card border-success mb-3" style="max-width: 18rem;">
                             <div class="card-header">CNS-LAB</div>
-                            <div class="card-body text-danger">
-                                <h5 class="card-title">55%</h5>
-                                <p class="card-text">Missed Lecture 3, 5, 7, 9, 11, 15</p>
+                            <div class="card-body text-success">
+                                <h5 class="card-title">79%</h5>
+                                <p class="card-text">Missed Lecture 1, 5, 8, 9</p>
                             </div>
-                        </div>  
+                        </div>
                         <div class="card border-success mb-3" style="max-width: 18rem;">
                             <div class="card-header">CC-LAB</div>
                             <div class="card-body text-success">
                                 <h5 class="card-title">85%</h5>
-                                <p class="card-text">Missed Lecture 2, 5, 9</p>
+                                <p class="card-text">Missed Lecture 1, 5, 9</p>
                             </div>
                         </div>
                         <div class="card border-danger mb-3" style="max-width: 18rem;">
                             <div class="card-header">DSBDA-LAB</div>
                             <div class="card-body text-danger">
-                                <h5 class="card-title">70%</h5>
-                                <p class="card-text">Missed Lecture 3, 5, 7, 9</p>
+                                <h5 class="card-title">68%</h5>
+                                <p class="card-text">Missed Lecture 2, 3, 5, 7</p>
                             </div>
                         </div>  
                     </div>

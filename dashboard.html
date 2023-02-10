@@ -19,36 +19,56 @@
             display: grid;
             grid-template-rows: 3fr 40fr 1fr;
         }
-        .middle{
+        .middle-with-sidebar{
             display: grid;
             grid-template-columns: 1fr 5fr;
+        }
+        .middle-without-sidebar{
+            display: grid;
+            grid-template-columns: 1fr;
         }
         .sidebar{
             background-color: lightgray;
             height: 100%;
         }
-        .sidebar>.fs-4{
+        .welcome-msg{
             margin: 10px;
         }
-        /* .sidebar-close-btn{
-            width: 30px;
-            height: 30px;
-            line-height: 30px;
-            border: 1px solid gray;
-            border-radius: 100%;
-            text-align: center;
-            background-color: lightblue;
-            cursor: pointer;
-            transition: all .2s;
+        .sidebar-info{
+            display: grid;
+            grid-template-columns: 9fr 1fr;
         }
-        .sidebar-close-btn:active{
-            background-color: rgb(57, 186, 230);
-        } */
+        .sidebar-info>span{
+            background-color: lightcoral;
+            border-radius: 15%;
+            justify-content: center;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            min-width: 35px;
+            min-height: 35px;
+            text-align: center;
+            margin-top: 50%;
+            cursor: pointer;
+        }
 
-        /* .content-image-panel{
-           height: 20vh;
-           object-fit: cover;
-        } */
+        .sidebar-open-btn{
+            position: fixed;
+            display: none;
+            background-color: lightcoral;
+            border-radius: 15%;
+            justify-content: center;
+            height: 35px;
+            width: 35px;
+            line-height: 35px;
+            min-width: 35px;
+            min-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            top: 10%;
+            left: 0%;
+            z-index: 50;
+        }
         .content{
             background-color: rgb(204, 228, 236);
             padding: 2%;
@@ -114,6 +134,11 @@
 </head>
 <body>
     <div>
+        <div id="sidebar-open-btn" class="sidebar-open-btn" onclick="showSidebar()">
+            <span>
+                &#9776;
+            </span>
+        </div>
         <div class="header">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -150,14 +175,14 @@
                 </div>
               </nav>
         </div>
-        <div class="middle">
-            <div class="sidebar">
-                
-                <!-- <div class="sidebar-close-btn"> 
-                    X
-                </div> -->
-                <p class="fs-4">Welcome Siddhesh!</p>
-    
+        <div id="middle" class="middle-with-sidebar">
+            <div id="sidebar" class="sidebar">
+                <div class="sidebar-info">
+                    <p class="fs-4 welcome-msg">Welcome Siddhesh!</p>
+                    <span onclick="closeSidebar()">
+                        &#9776;
+                    </span>
+                </div>
                 <ul class="nav flex-column">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">My Profile</a>
@@ -277,7 +302,7 @@
                         </div>  
                     </div>
                 </div>
-                
+
                 <div class="card border-info mb-3">
                     <div class="card-header">Attendance Laborataries</div>
                     <div class="card-body attendance-card-body">                 
@@ -317,5 +342,17 @@
             <p class="text-end" style="margin-right: 1%">&#169; 2023 Siddhesh India, Inc. All rights reserved</p>
         </div>
     </div>
+    <script>
+        function closeSidebar(){
+            document.getElementById('sidebar').style.display = "none";
+            document.getElementById('middle').className = "middle-without-sidebar";
+            document.getElementById('sidebar-open-btn').style.display = "block";
+        }
+        function showSidebar(){
+            document.getElementById('sidebar').style.display = "block";
+            document.getElementById('middle').className = "middle-with-sidebar";
+            document.getElementById('sidebar-open-btn').style.display = "none";
+        }
+    </script>
 </body>
 </html>

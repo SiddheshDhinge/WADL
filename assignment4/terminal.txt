@@ -1,0 +1,470 @@
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ sudo apt update
+[sudo] password for siddhesh_33310: 
+Get:1 http://kali.download/kali kali-rolling InRelease [41.2 kB]
+Get:2 http://kali.download/kali kali-rolling/main amd64 Packages [19.3 MB]
+Get:3 http://kali.download/kali kali-rolling/main amd64 Contents (deb) [44.5 MB]
+Get:4 http://kali.download/kali kali-rolling/contrib amd64 Packages [116 kB]
+Get:5 http://kali.download/kali kali-rolling/contrib amd64 Contents (deb) [172 kB]
+Get:6 http://kali.download/kali kali-rolling/non-free amd64 Packages [217 kB]
+Get:7 http://kali.download/kali kali-rolling/non-free amd64 Contents (deb) [928 kB]
+Fetched 65.2 MB in 37s (1,771 kB/s)                                         
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+514 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ sudo apt install -y docker.io
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  cgroupfs-mount containerd criu libintl-perl libintl-xs-perl
+  libmodule-find-perl libmodule-scandeps-perl libproc-processtable-perl
+  libsort-naturally-perl needrestart runc tini
+Suggested packages:
+  containernetworking-plugins docker-doc aufs-tools btrfs-progs debootstrap
+  rinse rootlesskit xfsprogs zfs-fuse | zfsutils-linux
+The following NEW packages will be installed:
+  cgroupfs-mount containerd criu docker.io libintl-perl libintl-xs-perl
+  libmodule-find-perl libmodule-scandeps-perl libproc-processtable-perl
+  libsort-naturally-perl needrestart runc tini
+0 upgraded, 13 newly installed, 0 to remove and 514 not upgraded.
+Need to get 66.7 MB of archives.
+After this operation, 269 MB of additional disk space will be used.
+Get:1 http://http.kali.org/kali kali-rolling/main amd64 runc amd64 1.1.5+ds1-1+b1 [2,708 kB]
+Get:2 http://http.kali.org/kali kali-rolling/main amd64 containerd amd64 1.6.20~ds1-1+b1 [25.9 MB]
+Get:3 http://kali.download/kali kali-rolling/main amd64 tini amd64 0.19.0-1 [255 kB]
+Get:4 http://http.kali.org/kali kali-rolling/main amd64 docker.io amd64 20.10.24+dfsg1-1+b2 [36.2 MB]
+Get:5 http://kali.download/kali kali-rolling/main amd64 cgroupfs-mount all 1.4 [6,276 B]
+Get:6 http://kali.download/kali kali-rolling/main amd64 criu amd64 3.17.1-2 [665 kB]
+Get:7 http://kali.download/kali kali-rolling/main amd64 libintl-perl all 1.33-1 [720 kB]
+Get:8 http://kali.download/kali kali-rolling/main amd64 libintl-xs-perl amd64 1.33-1 [15.6 kB]
+Get:9 http://kali.download/kali kali-rolling/main amd64 libmodule-find-perl all 0.16-2 [10.6 kB]
+Get:10 http://kali.download/kali kali-rolling/main amd64 libmodule-scandeps-perl all 1.31-2 [41.7 kB]
+Get:11 http://http.kali.org/kali kali-rolling/main amd64 libproc-processtable-perl amd64 0.634-1+b2 [43.1 kB]
+Get:12 http://kali.download/kali kali-rolling/main amd64 libsort-naturally-perl all 1.03-4 [13.1 kB]
+Get:13 http://kali.download/kali kali-rolling/main amd64 needrestart all 3.6-3 [59.3 kB]
+Fetched 66.7 MB in 55s (1,205 kB/s)                                         
+Selecting previously unselected package runc.
+(Reading database ... 393722 files and directories currently installed.)
+Preparing to unpack .../00-runc_1.1.5+ds1-1+b1_amd64.deb ...
+Unpacking runc (1.1.5+ds1-1+b1) ...
+Selecting previously unselected package containerd.
+Preparing to unpack .../01-containerd_1.6.20~ds1-1+b1_amd64.deb ...
+Unpacking containerd (1.6.20~ds1-1+b1) ...
+Selecting previously unselected package tini.
+Preparing to unpack .../02-tini_0.19.0-1_amd64.deb ...
+Unpacking tini (0.19.0-1) ...
+Selecting previously unselected package docker.io.
+Preparing to unpack .../03-docker.io_20.10.24+dfsg1-1+b2_amd64.deb ...
+Unpacking docker.io (20.10.24+dfsg1-1+b2) ...
+Selecting previously unselected package cgroupfs-mount.
+Preparing to unpack .../04-cgroupfs-mount_1.4_all.deb ...
+Unpacking cgroupfs-mount (1.4) ...
+Selecting previously unselected package criu.
+Preparing to unpack .../05-criu_3.17.1-2_amd64.deb ...
+Unpacking criu (3.17.1-2) ...
+Selecting previously unselected package libintl-perl.
+Preparing to unpack .../06-libintl-perl_1.33-1_all.deb ...
+Unpacking libintl-perl (1.33-1) ...
+Selecting previously unselected package libintl-xs-perl.
+Preparing to unpack .../07-libintl-xs-perl_1.33-1_amd64.deb ...
+Unpacking libintl-xs-perl (1.33-1) ...
+Selecting previously unselected package libmodule-find-perl.
+Preparing to unpack .../08-libmodule-find-perl_0.16-2_all.deb ...
+Unpacking libmodule-find-perl (0.16-2) ...
+Selecting previously unselected package libmodule-scandeps-perl.
+Preparing to unpack .../09-libmodule-scandeps-perl_1.31-2_all.deb ...
+Unpacking libmodule-scandeps-perl (1.31-2) ...
+Selecting previously unselected package libproc-processtable-perl:amd64.
+Preparing to unpack .../10-libproc-processtable-perl_0.634-1+b2_amd64.deb ...
+Unpacking libproc-processtable-perl:amd64 (0.634-1+b2) ...
+Selecting previously unselected package libsort-naturally-perl.
+Preparing to unpack .../11-libsort-naturally-perl_1.03-4_all.deb ...
+Unpacking libsort-naturally-perl (1.03-4) ...
+Selecting previously unselected package needrestart.
+Preparing to unpack .../12-needrestart_3.6-3_all.deb ...
+Unpacking needrestart (3.6-3) ...
+Setting up runc (1.1.5+ds1-1+b1) ...
+Setting up libmodule-find-perl (0.16-2) ...
+Setting up tini (0.19.0-1) ...
+Setting up libproc-processtable-perl:amd64 (0.634-1+b2) ...
+Setting up criu (3.17.1-2) ...
+Setting up libintl-perl (1.33-1) ...
+Setting up cgroupfs-mount (1.4) ...
+update-rc.d: We have no instructions for the cgroupfs-mount init script.
+update-rc.d: It looks like a non-network service, we enable it.
+Setting up containerd (1.6.20~ds1-1+b1) ...
+containerd.service is a disabled or a static unit, not starting it.
+Setting up libsort-naturally-perl (1.03-4) ...
+Setting up libmodule-scandeps-perl (1.31-2) ...
+Setting up needrestart (3.6-3) ...
+Setting up docker.io (20.10.24+dfsg1-1+b2) ...
+Adding group `docker' (GID 143) ...
+Done.
+update-rc.d: We have no instructions for the docker init script.
+update-rc.d: It looks like a non-network service, we enable it.
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Setting up libintl-xs-perl (1.33-1) ...
+Processing triggers for libc-bin (2.36-8) ...
+Processing triggers for man-db (2.11.2-1) ...
+Processing triggers for kali-menu (2023.1.7) ...
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ sudo systemctl enable docker --now
+Synchronizing state of docker.service with SysV service script with /lib/systemd/systemd-sysv-install.
+Executing: /lib/systemd/systemd-sysv-install enable docker
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ sudo usermod -aG docker $USER                                            
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ ls
+CCL        Downloads          Music     setups                    test.txt
+Desktop    eclipse            Pictures  siddhesh_33310@10.0.2.15  Videos
+Documents  eclipse-workspace  Public    Templates                 WADL
+
+┌──(siddhesh_33310㉿kali)-[~]
+└─$ cd WADL
+
+┌──(siddhesh_33310㉿kali)-[~/WADL]
+└─$ ls                                                                       
+assignment1  index.html  README.md
+
+┌──(siddhesh_33310㉿kali)-[~/WADL]
+└─$ git pull
+Username for 'https://github.com': SiddheshDhinge
+Password for 'https://SiddheshDhinge@github.com': 
+Already up to date.
+
+┌──(siddhesh_33310㉿kali)-[~/WADL]
+└─$ mkdir assignment4
+
+┌──(siddhesh_33310㉿kali)-[~/WADL]
+└─$ cd assignment4
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ git clone https://github.com/docker/getting-started.git
+Cloning into 'getting-started'...
+remote: Enumerating objects: 960, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 960 (delta 0), reused 0 (delta 0), pack-reused 957
+Receiving objects: 100% (960/960), 5.21 MiB | 11.86 MiB/s, done.
+Resolving deltas: 100% (512/512), done.
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ docker run hello-world                                                   
+docker: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/containers/create": dial unix /var/run/docker.sock: connect: permission denied.
+See 'docker run --help'.
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ newgrp docker                                                            
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+^C
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ ls
+getting-started
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ docker run getting-started
+Unable to find image 'getting-started:latest' locally
+docker: Error response from daemon: pull access denied for getting-started, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ ^C                                                                       
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+719385e32844: Pull complete 
+Digest: sha256:fc6cf906cbfa013e80938cdf0bb199fbdbb86d6e3e013783e5a766f50f5dbce0
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+Share images, automate workflows, and more with a free Docker ID:
+ https://hub.docker.com/
+
+For more examples and ideas, visit:
+ https://docs.docker.com/get-started/
+
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ cd getting-started/                                                      
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ ls                                                                       
+app       docker-compose.yml  docs     mkdocs.yml  requirements.txt
+build.sh  Dockerfile          LICENSE  README.md
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker build -t getting-started .
+Sending build context to Docker daemon  12.93MB
+Step 1/25 : FROM --platform=$BUILDPLATFORM python:alpine AS base
+failed to parse platform : "" is an invalid component of "": platform specifier component must match "^[A-Za-z0-9_-]+$": invalid argument
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker run getting-started
+Unable to find image 'getting-started:latest' locally
+^C
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker run
+"docker run" requires at least 1 argument.
+See 'docker run --help'.
+
+Usage:  docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Run a command in a new container
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker build -t getting-started .                                        
+Sending build context to Docker daemon  12.93MB
+Step 1/25 : FROM --platform=$BUILDPLATFORM python:alpine AS base
+failed to parse platform : "" is an invalid component of "": platform specifier component must match "^[A-Za-z0-9_-]+$": invalid argument
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ cd app/                                                                  
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker build -t getting-started .                                        
+unable to prepare context: unable to evaluate symlinks in Dockerfile path: lstat /home/siddhesh_33310/WADL/assignment4/getting-started/app/Dockerfile: no such file or directory
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ touch Dockerfile
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker build -t getting-started .                                        
+Sending build context to Docker daemon  4.626MB
+Error response from daemon: the Dockerfile (Dockerfile) cannot be empty
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker run -d -p 80:80 docker/getting-started                            
+Unable to find image 'docker/getting-started:latest' locally
+^C
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ cd ..                                                                    
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ cd ..                                                                    
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ docker run -d -p 80:80 docker/getting-started                            
+Unable to find image 'docker/getting-started:latest' locally
+latest: Pulling from docker/getting-started
+c158987b0551: Pull complete 
+1e35f6679fab: Pull complete 
+cb9626c74200: Pull complete 
+b6334b6ace34: Pull complete 
+f1d1c9928c82: Pull complete 
+9b6f639ec6ea: Pull complete 
+ee68d3549ec8: Pull complete 
+33e0cbbb4673: Pull complete 
+4f7e34c2de10: Pull complete 
+Digest: sha256:d79336f4812b6547a53e735480dde67f8f8f7071b414fbd9297609ffb989abc1
+Status: Downloaded newer image for docker/getting-started:latest
+9e7a876f2af23d0fa14b0aeb38d5de227f76fee551e8113f71e66cdef9ab81ac
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4]
+└─$ cd getting-started/                                                      
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ ls
+app       docker-compose.yml  docs     mkdocs.yml  requirements.txt
+build.sh  Dockerfile          LICENSE  README.md
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker compose up                                                        
+docker: 'compose' is not a docker command.
+See 'docker --help'
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ cd app/                                                                  
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker build -t getting-started .                                        
+Sending build context to Docker daemon  4.626MB
+Error response from daemon: the Dockerfile (Dockerfile) cannot be empty
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ cd ..                                                                    
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker run -dp 3000:3000 getting-started                                 
+Unable to find image 'getting-started:latest' locally
+docker: Error response from daemon: pull access denied for getting-started, repository does not exist or may require 'docker login': denied: requested access to the resource is denied.
+See 'docker run --help'.
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ docker build -t getting-started .
+Sending build context to Docker daemon  12.93MB
+Step 1/25 : FROM --platform=$BUILDPLATFORM python:alpine AS base
+failed to parse platform : "" is an invalid component of "": platform specifier component must match "^[A-Za-z0-9_-]+$": invalid argument
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started]
+└─$ cd app/                                                                  
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker build -t getting-started .                                        
+Sending build context to Docker daemon  4.626MB
+Step 1/6 : FROM node:18-alpine
+18-alpine: Pulling from library/node
+f56be85fc22e: Pull complete 
+931b0e865bc2: Pull complete 
+60542df8b663: Pull complete 
+062e26bc2446: Pull complete 
+Digest: sha256:1ccc70acda680aa4ba47f53e7c40b2d4d6892de74817128e0662d32647dd7f4d
+Status: Downloaded newer image for node:18-alpine
+ ---> 6f44d13dd258
+Step 2/6 : WORKDIR /app
+ ---> Running in da0c41df7b7d
+Removing intermediate container da0c41df7b7d
+ ---> 68ddb05434c1
+Step 3/6 : COPY . .
+ ---> c7d87a2077b8
+Step 4/6 : RUN yarn install --production
+ ---> Running in 2e0b1e3a3760
+yarn install v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+error /app/node_modules/sqlite3: Command failed.
+Exit code: 1                                                                 
+Command: node-pre-gyp install --fallback-to-build                            
+Arguments:                                                                   
+Directory: /app/node_modules/sqlite3                                         
+Output:                                                                      
+node-pre-gyp info it worked if it ends with ok                               
+node-pre-gyp info using node-pre-gyp@1.0.10                                  
+node-pre-gyp info using node@18.16.0 | linux | x64                           
+node-pre-gyp info check checked for "/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64/node_sqlite3.node" (not found)                          
+node-pre-gyp http GET https://github.com/TryGhost/node-sqlite3/releases/download/v5.1.2/napi-v6-linux-musl-x64.tar.gz                                     
+node-pre-gyp ERR! install request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/1367055/00c13e1d-6294-4e9f-9d26-c303f2e5071e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230516T173059Z&X-Amz-Expires=300&X-Amz-Signature=89979e26b11ab1f2b12eeaf80fb521a2f2b510b8aae48b8b00b8fb8c6522e760&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=1367055&response-content-disposition=attachment%3B%20filename%3Dnapi-v6-linux-musl-x64.tar.gz&response-content-type=application%2Foctet-stream failed, reason: getaddrinfo EAI_AGAIN objects.githubusercontent.com                              
+node-pre-gyp WARN Pre-built binaries not installable for sqlite3@5.1.2 and node@18.16.0 (node-v108 ABI, musl) (falling back to source compile with node-gyp)                                                                           
+node-pre-gyp WARN Hit error request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/1367055/00c13e1d-6294-4e9f-9d26-c303f2e5071e?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230516%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230516T173059Z&X-Amz-Expires=300&X-Amz-Signature=89979e26b11ab1f2b12eeaf80fb521a2f2b510b8aae48b8b00b8fb8c6522e760&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=1367055&response-content-disposition=attachment%3B%20filename%3Dnapi-v6-linux-musl-x64.tar.gz&response-content-type=application%2Foctet-stream failed, reason: getaddrinfo EAI_AGAIN objects.githubusercontent.com                            
+gyp info it worked if it ends with ok                                        
+gyp info using node-gyp@8.4.1                                                
+gyp info using node@18.16.0 | linux | x64                                    
+gyp info ok                                                                  
+gyp info it worked if it ends with ok                                        
+gyp info using node-gyp@8.4.1                                                
+gyp info using node@18.16.0 | linux | x64                                    
+gyp ERR! find Python                                                         
+gyp ERR! find Python Python is not set from command line or npm configuration
+gyp ERR! find Python Python is not set from environment variable PYTHON      
+gyp ERR! find Python checking if "python3" can be used                       
+gyp ERR! find Python - "python3" is not in PATH or produced an error         
+gyp ERR! find Python checking if "python" can be used                        
+gyp ERR! find Python - "python" is not in PATH or produced an error          
+gyp ERR! find Python                                                         
+gyp ERR! find Python **********************************************************                                                                           
+gyp ERR! find Python You need to install the latest version of Python.       
+gyp ERR! find Python Node-gyp should be able to find and use Python. If not, 
+gyp ERR! find Python you can try one of the following options:               
+gyp ERR! find Python - Use the switch --python="/path/to/pythonexecutable"   
+gyp ERR! find Python   (accepted by both node-gyp and npm)                   
+gyp ERR! find Python - Set the environment variable PYTHON                   
+gyp ERR! find Python - Set the npm configuration variable python:            
+gyp ERR! find Python   npm config set python "/path/to/pythonexecutable"     
+gyp ERR! find Python For more information consult the documentation at:      
+gyp ERR! find Python https://github.com/nodejs/node-gyp#installation         
+gyp ERR! find Python **********************************************************                                                                           
+gyp ERR! find Python                                                         
+gyp ERR! configure error                                                     
+gyp ERR! stack Error: Could not find any Python installation to use          
+gyp ERR! stack     at PythonFinder.fail (/app/node_modules/node-gyp/lib/find-python.js:330:47)                                                            
+gyp ERR! stack     at PythonFinder.runChecks (/app/node_modules/node-gyp/lib/find-python.js:159:21)                                                       
+gyp ERR! stack     at PythonFinder.<anonymous> (/app/node_modules/node-gyp/lib/find-python.js:202:16)                                                     
+gyp ERR! stack     at PythonFinder.execFileCallback (/app/node_modules/node-gyp/lib/find-python.js:294:16)                                                
+gyp ERR! stack     at exithandler (node:child_process:427:5)                 
+gyp ERR! stack     at ChildProcess.errorhandler (node:child_process:439:5)   
+gyp ERR! stack     at ChildProcess.emit (node:events:513:28)                 
+gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:289:12)                                                                    
+gyp ERR! stack     at onErrorNT (node:internal/child_process:476:16)         
+gyp ERR! stack     at process.processTicksAndRejections (node:internal/process/task_queues:82:21)                                                         
+gyp ERR! System Linux 6.1.0-kali5-amd64                                      
+gyp ERR! command "/usr/local/bin/node" "/app/node_modules/node-gyp/bin/node-gyp.js" "configure" "--fallback-to-build" "--module=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64/node_sqlite3.node" "--module_name=node_sqlite3" "--module_path=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64" "--napi_version=8" "--node_abi_napi=napi" "--napi_build_version=6" "--node_napi_label=napi-v6"                                                      
+gyp ERR! cwd /app/node_modules/sqlite3                                       
+gyp ERR! node -v v18.16.0                                                    
+gyp ERR! node-gyp -v v8.4.1                                                  
+gyp ERR! not ok                                                              
+node-pre-gyp ERR! build error                                                
+node-pre-gyp ERR! stack Error: Failed to execute '/usr/local/bin/node /app/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64/node_sqlite3.node --module_name=node_sqlite3 --module_path=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64 --napi_version=8 --node_abi_napi=napi --napi_build_version=6 --node_napi_label=napi-v6' (1)                                      
+node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (/app/node_modules/@mapbox/node-pre-gyp/lib/util/compile.js:89:23)                                
+node-pre-gyp ERR! stack     at ChildProcess.emit (node:events:513:28)        
+node-pre-gyp ERR! stack     at maybeClose (node:internal/child_process:1091:16)                                                                           
+node-pre-gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:302:5)                                                            
+node-pre-gyp ERR! System Linux 6.1.0-kali5-amd64                             
+node-pre-gyp ERR! command "/usr/local/bin/node" "/app/node_modules/sqlite3/node_modules/.bin/node-pre-gyp" "install" "--fallback-to-build"                
+node-pre-gyp ERR! cwd /app/node_modules/sqlite3                              
+node-pre-gyp ERR! node -v v18.16.0                                           
+node-pre-gyp ERR! node-pre-gyp -v v1.0.10                                    
+node-pre-gyp ERR! not ok                                                     
+Failed to execute '/usr/local/bin/node /app/node_modules/node-gyp/bin/node-gyp.js configure --fallback-to-build --module=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64/node_sqlite3.node --module_name=node_sqlite3 --module_path=/app/node_modules/sqlite3/lib/binding/napi-v6-linux-musl-x64 --napi_version=8 --node_abi_napi=napi --napi_build_version=6 --node_napi_label=napi-v6' (1)                                                                     
+info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+The command '/bin/sh -c yarn install --production' returned a non-zero code: 1
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker build -t getting-started .                                        
+Sending build context to Docker daemon  4.626MB
+Step 1/6 : FROM node:18-alpine
+ ---> 6f44d13dd258
+Step 2/6 : WORKDIR /app
+ ---> Using cache
+ ---> 68ddb05434c1
+Step 3/6 : COPY . .
+ ---> Using cache
+ ---> c7d87a2077b8
+Step 4/6 : RUN yarn install --production
+ ---> Running in d4804bc5a0bc
+yarn install v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 26.99s.
+Removing intermediate container d4804bc5a0bc
+ ---> 8bf040394ecf
+Step 5/6 : CMD ["node", "src/index.js"]
+ ---> Running in e27757faca7f
+Removing intermediate container e27757faca7f
+ ---> cd0696a62b1c
+Step 6/6 : EXPOSE 3000
+ ---> Running in 79138da64b76
+Removing intermediate container 79138da64b76
+ ---> 8be80bdd85c2
+Successfully built 8be80bdd85c2
+Successfully tagged getting-started:latest
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ docker run -dp 3000:3000 getting-started                                 
+fec5ed01a0a08e1512237bdb7e9f3438161b13c5d30fd33332edd001ea320403
+
+┌──(siddhesh_33310㉿kali)-[~/WADL/assignment4/getting-started/app]
+└─$ 
+
